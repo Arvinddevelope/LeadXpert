@@ -1,0 +1,272 @@
+{
+  "project_info": {
+    "project_number": "978797003278",
+    "firebase_url": "https://refuelgo-98298-default-rtdb.firebaseio.com",
+    "project_id": "refuelgo-98298",
+    "storage_bucket": "refuelgo-98298.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:e72348d5eaea1ec065b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.acmastercare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:7053588d637a173765b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.hitwicket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:6ff8e42a3e5f1a7b65b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.kapdacleanadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:e757d2b51cd963b465b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.leadstorex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:dcdd573373e5ba9065b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.leadxpert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:2d064225bccefb2e65b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.novamind"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:cf10697baed9889365b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.smartleadtrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:3c0b7f77f8c3d5c865b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.wheelrush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:978797003278:android:c1a0098173fccd2665b25f",
+        "android_client_info": {
+          "package_name": "com.arvind.wheelrushadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTS5bcmO4bq_5DnbYMIdBAEjDt7PFJInM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "978797003278-7cknakdt07afqeiviuqrp6hbtcvhncco.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

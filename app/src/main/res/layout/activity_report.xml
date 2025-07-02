@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Centered Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lead Analytics Report"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#222222"
+            android:gravity="center"
+            android:layout_marginBottom="4dp" />
+
+        <!-- 🔽 Subtitle Added -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Insights into your lead performance"
+            android:textSize="14sp"
+            android:textColor="#777777"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Stats Section -->
+        <TextView
+            android:id="@+id/tvTotalLeads"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Leads: 120"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tvThisMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This Month: 40"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/tvConversionRate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conversion Rate: 35%"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="4dp" />
+
+        <!-- Bar Chart Placeholder -->
+        <ImageView
+            android:id="@+id/chartImage"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/ic_bar_chart"
+            android:scaleType="centerInside"
+            android:layout_marginTop="24dp"
+            android:background="#F5F5F5"
+            android:padding="16dp" />
+
+        <!-- Export Button -->
+        <Button
+            android:id="@+id/btnExportReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Export as PDF / CSV"
+            android:textAllCaps="false"
+            android:layout_marginTop="32dp" />
+    </LinearLayout>
+</ScrollView>
