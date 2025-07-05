@@ -3,11 +3,14 @@ package com.arvind.leadxpert;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.format.DateUtils;
+import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentSnapshot;
@@ -19,8 +22,7 @@ import java.util.Date;
 public class DashboardActivity extends AppCompatActivity {
 
     private TextView tvTodayCount, tvYesterdayCount, tvMonthCount, tvTotalCount;
-    private Button addLeadBtn, viewLeadsBtn, openReportsBtn;
-    private Button openProfileBtn, openSettingsBtn;
+    private Button viewLeadsBtn;
 
     private FirebaseFirestore db;
     private String userId;
@@ -35,29 +37,39 @@ public class DashboardActivity extends AppCompatActivity {
         tvYesterdayCount = findViewById(R.id.tvYesterdayCount);
         tvMonthCount = findViewById(R.id.tvMonthCount);
         tvTotalCount = findViewById(R.id.tvTotalCount);
-
-        addLeadBtn = findViewById(R.id.addLeadBtn);
         viewLeadsBtn = findViewById(R.id.viewLeadsBtn);
-        openReportsBtn = findViewById(R.id.openReportsBtn);
-        openProfileBtn = findViewById(R.id.openProfileBtn);
-        openSettingsBtn = findViewById(R.id.openSettingsBtn);
 
         db = FirebaseFirestore.getInstance();
         userId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
-        // Button Clicks
-        addLeadBtn.setOnClickListener(v -> startActivity(new Intent(this, AddLeadActivity.class)));
-
+        // View Leads button click
         viewLeadsBtn.setOnClickListener(v -> startActivity(new Intent(this, LeadListActivity.class)));
 
-        openReportsBtn.setOnClickListener(v -> startActivity(new Intent(this, ReportActivity.class)));
-
-        openProfileBtn.setOnClickListener(v -> startActivity(new Intent(this, ProfileActivity.class)));
-
-        openSettingsBtn.setOnClickListener(v -> startActivity(new Intent(this, SettingsActivity.class)));
+        // Bottom Navigation setup
+        BottomNavigationView bottomNav = findViewById(R.id.bottomNavigationView);
+        bottomNav.setOnItemSelectedListener(this::onNavigationItemSelected);
+        bottomNav.setSelectedItemId(R.id.nav_dashboard); // Highlight Dashboard
 
         // Load Dashboard Stats
         loadStats();
+    }
+
+    // ✅ Bottom Navigation Listener using valid constant IDs from bottom_nav_menu.xml
+    private boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.nav_dashboard) {
+            return true; // Already here
+        } else if (id == R.id.nav_add) {
+            startActivity(new Intent(this, AddLeadActivity.class));
+            return true;
+        } else if (id == R.id.nav_profile) {
+            startActivity(new Intent(this, ProfileActivity.class));
+            return true;
+        } else if (id == R.id.nav_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
+            return true;
+        }
+        return false;
     }
 
     private void loadStats() {
@@ -102,14 +114,12 @@ public class DashboardActivity extends AppCompatActivity {
                         }
                     }
 
-                    // Set stats
                     tvTodayCount.setText(String.valueOf(today));
                     tvYesterdayCount.setText(String.valueOf(yesterday));
                     tvMonthCount.setText(String.valueOf(month));
                     tvTotalCount.setText(String.valueOf(total));
                 })
                 .addOnFailureListener(e -> {
-                    // Fallback values
                     tvTodayCount.setText("0");
                     tvYesterdayCount.setText("0");
                     tvMonthCount.setText("0");

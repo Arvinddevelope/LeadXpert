@@ -1,285 +1,284 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#F9FAFB">
 
-    <!-- Fixed Header -->
+    <!-- Main Content -->
     <LinearLayout
+        android:id="@+id/mainLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="16dp"
-        android:background="#FFFFFF"
-        android:elevation="2dp">
+        android:paddingBottom="56dp">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Welcome to LeadXpert"
-            android:textSize="22sp"
-            android:textStyle="bold"
-            android:textColor="#1A237E"
-            android:gravity="center"
-            android:layout_marginBottom="4dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Track your lead performance effortlessly"
-            android:textSize="14sp"
-            android:textColor="#607D8B"
-            android:gravity="center"
-            android:layout_marginBottom="12dp" />
-    </LinearLayout>
-
-    <!-- Scrollable Content -->
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:padding="16dp">
-
+        <!-- Fixed Header -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="2dp">
 
-            <!-- Stats Cards -->
-            <LinearLayout
-                android:orientation="vertical"
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp">
-
-                <!-- Row 1 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2"
-                    android:layout_marginBottom="8dp">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="8dp"
-                        app:cardElevation="4dp"
-                        app:cardCornerRadius="12dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Today"
-                                android:textColor="#333"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvTodayCount"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="5"
-                                android:textColor="#1565C0"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="4dp" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_weight="1"
-                        app:cardElevation="4dp"
-                        app:cardCornerRadius="12dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Yesterday"
-                                android:textColor="#333"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvYesterdayCount"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="3"
-                                android:textColor="#EF6C00"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="4dp" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-
-                <!-- Row 2 -->
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:weightSum="2">
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_weight="1"
-                        android:layout_marginEnd="8dp"
-                        app:cardElevation="4dp"
-                        app:cardCornerRadius="12dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="This Month"
-                                android:textColor="#333"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvMonthCount"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="30"
-                                android:textColor="#388E3C"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="4dp" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="0dp"
-                        android:layout_height="120dp"
-                        android:layout_weight="1"
-                        app:cardElevation="4dp"
-                        app:cardCornerRadius="12dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="Total Leads"
-                                android:textColor="#333"
-                                android:textSize="16sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:id="@+id/tvTotalCount"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="124"
-                                android:textColor="#8E24AA"
-                                android:textSize="24sp"
-                                android:textStyle="bold"
-                                android:layout_marginTop="4dp" />
-                        </LinearLayout>
-                    </androidx.cardview.widget.CardView>
-                </LinearLayout>
-            </LinearLayout>
-
-            <!-- Graph Section -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Performance Overview"
-                android:textSize="16sp"
+                android:text="Welcome to LeadXpert"
+                android:textSize="22sp"
                 android:textStyle="bold"
-                android:textColor="#333"
-                android:layout_marginBottom="8dp" />
+                android:textColor="#1A237E"
+                android:gravity="center"
+                android:layout_marginBottom="4dp" />
 
-            <ImageView
-                android:id="@+id/ivGraph"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:src="@drawable/ic_bar_chart"
-                android:scaleType="fitCenter"
-                android:background="@drawable/bg_input_field"
-                android:layout_marginBottom="24dp" />
-
-            <!-- Quick Actions -->
-            <TextView
-                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quick Actions"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                android:textColor="#333"
+                android:text="Track your lead performance effortlessly"
+                android:textSize="14sp"
+                android:textColor="#607D8B"
+                android:gravity="center"
                 android:layout_marginBottom="12dp" />
+        </LinearLayout>
 
-            <GridLayout
+        <!-- Scrollable Content -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:rowCount="3"
-                android:alignmentMode="alignMargins"
-                android:columnOrderPreserved="false"
-                android:useDefaultMargins="true">
+                android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/addLeadBtn"
-                    android:layout_width="0dp"
+                <!-- Stats Cards -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="➕ Add Lead" />
+                    android:layout_marginBottom="16dp">
 
-                <Button
-                    android:id="@+id/viewLeadsBtn"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="📋 View Leads" />
+                    <!-- Row 1 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:layout_marginBottom="8dp">
 
-                <Button
-                    android:id="@+id/openReportsBtn"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="📊 Reports" />
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="12dp">
 
-                <Button
-                    android:id="@+id/openProfileBtn"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="👤 Profile" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
 
-                <Button
-                    android:id="@+id/openSettingsBtn"
-                    android:layout_width="0dp"
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Today"
+                                    android:textColor="#333"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTodayCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5"
+                                    android:textColor="#1565C0"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Yesterday"
+                                    android:textColor="#333"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvYesterdayCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="3"
+                                    android:textColor="#EF6C00"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <!-- Row 2 -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            android:layout_marginEnd="8dp"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="This Month"
+                                    android:textColor="#333"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvMonthCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="30"
+                                    android:textColor="#388E3C"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="120dp"
+                            android:layout_weight="1"
+                            app:cardElevation="4dp"
+                            app:cardCornerRadius="12dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Total Leads"
+                                    android:textColor="#333"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tvTotalCount"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="124"
+                                    android:textColor="#8E24AA"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="4dp" />
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Graph -->
+                <TextView
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_columnWeight="1"
-                    android:text="⚙️ Settings" />
-            </GridLayout>
-        </LinearLayout>
-    </ScrollView>
-</LinearLayout>
+                    android:text="Performance Overview"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginBottom="8dp" />
+
+                <ImageView
+                    android:id="@+id/ivGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:src="@drawable/ic_bar_chart"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Quick Actions -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quick Actions"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#333"
+                    android:layout_marginBottom="12dp" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:rowCount="3"
+                    android:alignmentMode="alignMargins"
+                    android:columnOrderPreserved="false"
+                    android:useDefaultMargins="true">
+
+                    <Button
+                        android:id="@+id/viewLeadsBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:text="📋 View Leads" />
+
+                    <Button
+                        android:id="@+id/openReportsBtn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:text="📊 Reports" />
+                </GridLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Bottom Navigation View -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/selector_nav_item"
+        app:itemTextColor="@color/selector_nav_item" />
+</RelativeLayout>
