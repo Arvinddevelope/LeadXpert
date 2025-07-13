@@ -8,8 +8,8 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.arvind.leadxpert" />
-                  <option name="mobileSdkAppId" value="1:978797003278:android:dcdd573373e5ba9065b25f" />
+                  <option name="appId" value="com.arvind.leadxpert_Salespeople" />
+                  <option name="mobileSdkAppId" value="1:978797003278:android:bcd6897675194c7665b25f" />
                   <option name="projectId" value="refuelgo-98298" />
                   <option name="projectNumber" value="978797003278" />
                 </ConnectionSetting>

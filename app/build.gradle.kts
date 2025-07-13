@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.arvind.leadxpert"
+    namespace = "com.arvind.leadxpert_Salespeople"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.arvind.leadxpert"
+        applicationId = "com.arvind.leadxpert_Salespeople"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
